@@ -79,6 +79,7 @@ Send sms notification from external service
 send-sms= false
 
 path to retrieve video and image from raspberry (recommended usb storage)
+
 video_file_path=//media/HDD/videos/
 
 
