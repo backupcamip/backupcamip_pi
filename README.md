@@ -51,13 +51,18 @@ wget https://raw.github.com/backupcamip/backupcamip_pi/master/setup_backupcam.sh
 and sudo sh ./setup_backupcam.sh
 
 #Command:
+From anywhere:
 
 sudo backupcamip config to configure the app
+
 sudo backupcamip start to create the cron (every 5 minutes by default)
+
 sudo backupcamip stop to stop the process
 
 First time running manualy:
+
 backupcamip and 
+
 Authorize the app / autoriser l'application backupcamup_pi
 
 #Cfg Parameters:
