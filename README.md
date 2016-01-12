@@ -2,13 +2,13 @@
 
 Website www.backupcamip.com.
 
-Program Description
+#Program Description
 
 Backupcamip_PI is a standalone application to upload video and image from your RPI to your google drive.
 no additionnal libraries required, install and run.
 
-first sign in to your google account and visit www.backupcamip.com
-install the web from activation/setting, set your parameters and accept.
+First sign in to your google account and visit www.backupcamip.com
+Install the web from activation/setting, set your parameters and accept.
 From now, the web app is running on your own google account.
 
 Next step: install backupcamip_pi on your RPI.
@@ -17,7 +17,7 @@ Next step: install backupcamip_pi on your RPI.
 Final step: Register sending a request to contact@backupcamip.com (using the email set a recipient in the cfg)
 You'll get a evaluation period of one mounth. 
 
-BackupcamIP_PI Program Features
+#BackupcamIP_PI Program Features
 
 ENG
 
@@ -40,16 +40,18 @@ envoie un sms si l'option sms est activée
 
 Les fichiers sont automatiquement supprimés de votre google drive aprés 15 jours
 
-Installation:
+#Installation:
 
 Activate the webApp on www.backupcamip.com / activer la webapp sur www.backupcamip.com
 
 Get backupcamup_pi using installer / installer backupcamup_pi via l'installer:
+
 wget https://raw.github.com/backupcamip/backupcamip_pi/master/setup_backupcam.sh
 
-and sudo ./setup_backupcam.sh
+and sudo sh ./setup_backupcam.sh
 
-Command:
+#Command:
+
 sudo backupcamip config to configure the app
 sudo backupcamip start to create the cron (every 5 minutes by default)
 sudo backupcamip stop to stop the process
@@ -58,7 +60,8 @@ First time running manualy:
 backupcamip and 
 Authorize the app / autoriser l'application backupcamup_pi
 
-Cfg Parameters:
+#Cfg Parameters:
+
 Recipient email address (will receive the alert if send-email=true)
 
 recipient = test@gmail.com 
@@ -76,6 +79,7 @@ Send an email after the upload
 send-email = true
 
 Send sms notification from external service 
+
 send-sms= false
 
 path to retrieve video and image from raspberry (recommended usb storage)
@@ -83,3 +87,4 @@ path to retrieve video and image from raspberry (recommended usb storage)
 video_file_path=//media/HDD/videos/
 
 
+Enjoy ;)
