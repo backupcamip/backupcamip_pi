@@ -59,19 +59,26 @@ backupcamip and
 Authorize the app / autoriser l'application backupcamup_pi
 
 Cfg Parameters:
-# Recipient email address (will receive the alert if send-email=true)
+Recipient email address (will receive the alert if send-email=true)
+
 recipient = test@gmail.com 
 
-# Root Folder drive to store files (sub folder are created from here)
+Root Folder drive to store files (sub folder are created from here)
+
 folder = motion
 
-# Delete the local video file after the upload
+Delete the local video file after the upload
+
 delete-after-upload = true
 
-# Send an email after the upload
+Send an email after the upload
+
 send-email = true
+
+Send sms notification from external service 
 send-sms= false
-# path to retrieve video and image from raspberry (recommended usb storage)
+
+path to retrieve video and image from raspberry (recommended usb storage)
 video_file_path=//media/HDD/videos/
 
 
