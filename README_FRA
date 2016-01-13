@@ -1,0 +1,86 @@
+# backupcamip_pi
+
+site Web www.backupcamip.com.
+
+###Description
+
+Backupcamip_PI est une application standalone qui upload les videos et images du raspberry RPI vers votre compte google drive.
+auncune autre librairie n'est necessaire, installer et executer.
+
+S'authentifier sur votre compte google depuis votre browser internet puis
+visiter www.backupcamip.com
+Installer la web applicaiton depuis la page activation/parametrage, renseigner les paramètres et accepter les CGV/CGU.
+La web app est maintenant installée sur votre compte google.
+
+Next step: installer backupcamip_pi sur votre RPI.
+(voir ci-dessous)
+
+Final step: Enregistrez vous en envoyant une requete à contact@backupcamip.com (En utilisant l'email renseigné dans recipient du fichier cfg)
+Une periode d'évaluation d'un mois est proposée. 
+
+###BackupcamIP_PI Fonctionnalité
+
+backupcamip_pi est la version PI de backupcamip.
+
+Configurer vos cameras IP pour sauvegarder les videos et  photos sur votre dossier RPI (via ftp or smb).
+Backupcamip_pi upload automatiquement sur votre compte google drive tous les nouveaux fichier (classé par sous dossier),
+envoie un email avec le lien du fichier uploadé,
+envoie un sms si l'option sms est activé (necessite id and code d'activation du service free mobile).
+
+Les fichiers sont automatiquement supprimés après 15 jours de votre google drive.
+
+###Installation:
+
+- Activer la webapp sur www.backupcamip.com
+
+- Installer backupcamup_pi avec l'installer:
+
+      'wget https://raw.github.com/backupcamip/backupcamip_pi/master/setup_backupcam.sh'
+
+puis 'sudo sh ./setup_backupcam.sh'
+
+###Command:
+Depuis la console:
+
+- 'sudo backupcamip config' pour configurer l'application
+
+- 'sudo backupcamip start' pour lancer le scan des fichiers (5 minutes par défault)
+
+- 'sudo backupcamip stop' pour arreter le scan
+
+***Premiere execution manuellement:***
+
+'sudo backupcamip'
+
+et 
+
+Accepter les autorisations nécessaires de backupcamup_pi
+
+###Cfg Parametres:
+
+***Destinataire email address (les alertes sont envoyées sur cet email si send-email=true)***
+
+recipient = test@gmail.com 
+
+***Répèrtoire parent google drive  (les sous dossier sont créés dans ce répèrtoire)***
+
+folder = motion
+
+***Suppression des fichiers locaux après upload***
+
+delete-after-upload = true
+
+***Envoyer un email après upload***
+
+send-email = true
+
+***Envoyer un  sms de notification  ***
+
+send-sms= false
+
+***Chemin du raspberry où sont stockés les fichiers  (recommandé usb storage)***
+
+video_file_path=//media/HDD/videos/
+
+
+Enjoy ;)
