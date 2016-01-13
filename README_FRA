@@ -51,10 +51,13 @@ Depuis la console:
 ***Premiere execution manuellement:***
 
 'sudo backupcamip'
-
 et 
+Accepter les autorisations nécessaires de backupcamup_pi dans le broswer qui s'ouvre
 
-Accepter les autorisations nécessaires de backupcamup_pi
+ou 
+'sudo backupcamip --noauth_local_webserver' pour accepter les autorisation depuis un autre support
+(copier le lien dans un broswer internet, et copier/coller la clé obtenue dans la fenetre de l'appli)
+
 
 ###Cfg Parametres:
 
