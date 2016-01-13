@@ -30,16 +30,6 @@ send you a sms if sms option if activated (id and pass activation required).
 
 Files are automatically deleted after 15 days from your google drive.
 
-FR
-
-backupcamip_pi est la version raspberry pi de backupcamip.
-Configurer vos cameras pour deposer videos etr photos dans un répértoire du RPI.
-backupcamip_pi import automatiquement tous les fichiers reçus sur votre compte google drive (classés par date en sous répèrtoire)
-envoie un email avec le lien des fichiers importés
-envoie un sms si l'option sms est activée
-
-Les fichiers sont automatiquement supprimés de votre google drive aprés 15 jours
-
 ###Installation:
 
 - Activate the webApp on www.backupcamip.com / activer la webapp sur www.backupcamip.com
@@ -61,7 +51,9 @@ From anywhere:
 
 ***First time running manualy:***
 
-backupcamip and 
+sudo backupcamip
+
+and 
 
 Authorize the app / autoriser l'application backupcamup_pi
 
