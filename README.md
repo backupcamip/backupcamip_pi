@@ -55,8 +55,14 @@ sudo backupcamip
 
 and 
 
-Authorize the app / autoriser l'application backupcamup_pi
+Authorize the app
 
+or 
+
+sudo backupcamip --noauth_local_webserver
+
+ To register from another machine
+ 
 ###Cfg Parameters:
 
 ***Recipient email address (will receive the alert if send-email=true)***
