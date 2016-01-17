@@ -19,14 +19,13 @@ You'll get a evaluation period of one mounth.
 
 ###BackupcamIP_PI Program Features
 
-ENG
-
 backupcamip_pi is the raspberry pi version of backupcamip.
 
 Configure your IP camera(s) to save videos and photos to your RPI folder (via ftp or smb).
 Backupcamip_pi updates automatically to your google drive all incoming files (into subfolder by date),
-send you an email with the links of the  files updated,
-send you a sms if sms option if activated (id and pass activation required).
+send you an email with the links of the  files updated and thumbnails of the photos,
+send you a sms if sms option if activated (id and pass activation required),
+store files in a local backup folder if delete files is set to false.
 
 Files are automatically deleted after 15 days from your google drive.
 
@@ -43,7 +42,7 @@ and sudo sh ./setup_backupcam.sh
 ###Command:
 From anywhere:
 
-- sudo backupcamip config to configure the app
+- sudo backupcamip config to check the settings updated from the webapp 
 
 - sudo backupcamip start to create the cron (every 5 minutes by default)
 
@@ -63,7 +62,7 @@ sudo backupcamip --noauth_local_webserver
 
  To register from another machine
  
-###Cfg Parameters:
+###Cfg Parameters updated from the webapp see www.backupcamip.com PI settings:
 
 ***Recipient email address (will receive the alert if send-email=true)***
 
@@ -71,7 +70,7 @@ recipient = test@gmail.com
 
 ***Root Folder drive to store files (sub folder are created from here)***
 
-folder = motion
+root_folder = motion
 
 ***Delete the local video file after the upload***
 
@@ -81,13 +80,17 @@ delete-after-upload = true
 
 send-email = true
 
+*** Archive path id delete after upload is false
+
+archive_path=//media/HDD/save/
+
 ***Send sms notification from external service ***
 
 send-sms= false
 
 ***Path to retrieve video and image from raspberry (recommended usb storage)***
 
-video_file_path=//media/HDD/videos/
+import_file_path=//media/HDD/videos/
 
 
 Enjoy ;)
