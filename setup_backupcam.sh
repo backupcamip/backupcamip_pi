@@ -15,7 +15,6 @@ sudo chmod +x backupcamip
 sudo mkdir /usr/lib/backupcamip/
 sudo cp ./* /usr/lib/backupcamip/
 sudo ln -sv /usr/lib/backupcamip/backupcamip /usr/bin/backupcamip
-sudo cp ./config.cfg /usr/bin
 cd ..
 sudo rm -rf backupcamip
 sudo rm -rf backupcamip.tar.gz
