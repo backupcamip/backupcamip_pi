@@ -15,7 +15,7 @@ La web app est maintenant installée sur votre compte google.
 Next step: installer backupcamip_pi sur votre RPI.
 (voir ci-dessous)
 
-Final step: Enregistrez vous en envoyant une requete à contact@backupcamip.com (En utilisant l'email renseigné dans recipient du fichier cfg)
+Final step: Enregistrez vous en envoyant une requete à contact@backupcamip.com (En utilisant l'email renseigné dans la propriété recipient)
 Une periode d'évaluation d'un mois est proposée. 
 
 ###BackupcamIP_PI Fonctionnalité
@@ -24,7 +24,7 @@ backupcamip_pi est la version PI de backupcamip.
 
 Configurer vos cameras IP pour sauvegarder les videos et  photos sur votre dossier RPI (via ftp or smb).
 Backupcamip_pi upload automatiquement sur votre compte google drive tous les nouveaux fichier (classé par sous dossier),
-envoie un email avec le lien du fichier uploadé,
+envoie un email avec le lien des fichiers 'uploadés' et photos miniatures si activé dans evénement de vos camera ip. 
 envoie un sms si l'option sms est activé (necessite id and code d'activation du service free mobile).
 
 Les fichiers sont automatiquement supprimés après 15 jours de votre google drive.
@@ -42,7 +42,7 @@ puis 'sudo sh ./setup_backupcam.sh'
 ###Command:
 Depuis la console:
 
-- 'sudo backupcamip config' pour configurer l'application
+- 'sudo backupcamip config' pour verifier les paramètres initialisés depuis la web application
 
 - 'sudo backupcamip start' pour lancer le scan des fichiers (5 minutes par défault)
 
@@ -67,7 +67,7 @@ recipient = test@gmail.com
 
 ***Répèrtoire parent google drive  (les sous dossier sont créés dans ce répèrtoire)***
 
-folder = motion
+root_folder = motion
 
 ***Suppression des fichiers locaux après upload***
 
@@ -83,7 +83,10 @@ send-sms= false
 
 ***Chemin du raspberry où sont stockés les fichiers  (recommandé usb storage)***
 
-video_file_path=//media/HDD/videos/
+import_file_path=//media/HDD/videos/
 
+*** chemin de l'archive si delete after upload est faux
+
+archive_path=//media/HDD/save/
 
 Enjoy ;)
